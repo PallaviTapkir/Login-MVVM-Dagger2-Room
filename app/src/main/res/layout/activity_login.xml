@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                tools:context=".activity.login.LoginActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" tools:ignore="UselessParent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:text="LOGIN"
+                android:padding="5dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold|italic"
+                android:gravity="center"
+                android:textSize="41sp" app:fontFamily="@font/croissant_one"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textColorHint="@color/colorAccent">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_email_address"
+                    android:inputType="textEmailAddress"
+                    tools:fontFamily="@font/alegreya"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="14sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/colorAccent">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtPsssword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    tools:fontFamily="@font/alegreya"
+                    android:textSize="14sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:textColor="#FFFFFF"
+                app:fontFamily="@font/croissant_one"
+                android:background="@color/colorAccent"
+                android:text="@string/sign_in"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="30dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:fontFamily="@font/amiri_italic"
+                android:gravity="bottom"
+                android:layout_marginBottom="15dp"
+                android:padding="5dp"
+                android:text="@string/sign_up_text"
+                android:textColor="#3e3e3e"
+                android:textSize="14sp"/>
+
+    </LinearLayout>
+</RelativeLayout>
